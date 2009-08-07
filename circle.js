@@ -13,8 +13,8 @@ Object.extend(Circle.prototype, Object);
 
 Circle.prototype = {
 	initialize: function(startX, startY, centerX, centerY) {
-		this.startPoint		= new Point(startX, startY);	
-		this.centerPoint	= new Point(centerX, centerY);
+		this.startPoint  = new Point(startX, startY);	
+		this.centerPoint = new Point(centerX, centerY);
 
 		this.dx = startX - centerX;
 		this.dy = startY - centerY;
