@@ -1,7 +1,7 @@
 // circle.js
 // Requires script.aculo.us
 
-// Copyright (c) 2009 Leigh Caplan (http://www.github.com/texel, http://onehub.com)
+// Copyright (c) 2009 Leigh Caplan (lcaplan@onehub.com, http://www.github.com/texel, http://onehub.com)
 
 Point = function(x, y) {
 	this.x = x;
@@ -66,7 +66,8 @@ Effect.Circle = Class.create(Effect.Base, {
     var options = Object.extend({
       x:    0,
       y:    0,
-      mode: 'relative'
+      mode: 'relative',
+			transition: Effect.Transitions.linear
     }, arguments[1] || { });
     this.start(options);
   },
